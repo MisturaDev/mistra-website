@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mistra
+
+> **Your life, organized.**
+
+Mistra is a Personal Operating System designed to bring the essential parts of everyday productivity into one calm, focused workspace.
+
+Instead of switching between multiple productivity tools, Mistra brings **tasks, habits, notes, time-blocking, and quarterly goals** together in one unified experience.
+
+## Core Features
+
+- **Tasks** — Organize daily work with priorities and subtasks.
+- **Habits** — Build consistency with flexible streak tracking.
+- **Notes** — Capture and organize ideas with Markdown.
+- **Time Blocks** — Plan your day with a unified schedule.
+- **Goals** — Connect quarterly milestones to everyday actions.
+
+## Website
+
+The Mistra website is the landing page and waitlist funnel for the Mistra Personal Operating System.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Canvas Confetti
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
 
 ```bash
+git clone https://github.com/MisturaDev/mistra-website.git
+cd mistra-website
+# Mistra
+
+> **Your life, organized.**
+
+Mistra is a Personal Operating System designed to bring the essential parts of everyday productivity into one calm, focused workspace.
+
+Instead of switching between multiple productivity tools, Mistra brings **tasks, habits, notes, time-blocking, and quarterly goals** together in one unified experience.
+
+## Core Features
+
+- **Tasks** — Organize daily work with priorities and subtasks.
+- **Habits** — Build consistency with flexible streak tracking.
+- **Notes** — Capture and organize ideas with Markdown.
+- **Time Blocks** — Plan your day with a unified schedule.
+- **Goals** — Connect quarterly milestones to everyday actions.
+
+## Website
+
+The Mistra website is the landing page and waitlist funnel for the Mistra Personal Operating System.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Canvas Confetti
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/MisturaDev/mistra-website.git
+cd mistra-website
+Install dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project Structure
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+Mistra-Website/
+├── public/
+│   ├── favicon.png
+│   ├── icon.png
+│   ├── logo-glow.png
+│   └── tabIcons/
+│
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── PhoneMockup.tsx
+│   │   ├── DownloadSection.tsx
+│   │   ├── FAQ.tsx
+│   │   ├── CTASection.tsx
+│   │   └── Footer.tsx
+│   │
+│   └── lib/
+│       └── utils.ts
+│
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
+Platforms
 
-## Learn More
+Mistra is being developed for iOS and Android.
 
-To learn more about Next.js, take a look at the following resources:
+Download links on the website will connect to the respective app stores as the applications become available.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Mistra is built around a calm, modern, and focused visual experience with:
 
-## Deploy on Vercel
+Responsive layouts
+Subtle animations and micro-interactions
+Interactive product previews
+Clean typography
+Soft visual depth
+Mobile-first design
+Project Status
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In active development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The Mistra website and Personal Operating System are currently being developed.
+
+Author
+
+Mistura Ishola
+
+Built with care for people who want a simpler way to organize their lives.
+
+Mistra — Your life, organized.
