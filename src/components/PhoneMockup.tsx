@@ -63,8 +63,8 @@ export default function PhoneMockup() {
       tag: "Launch",
       subtasks: [
         { title: "Run end-to-end SQLite regression test", done: true },
-        { title: "Generate signed production APK bundle", done: true },
-        { title: "Submit TestFlight beta build", done: true },
+        { title: "Publish Google Play Store release", done: true },
+        { title: "Publish Apple App Store release", done: true },
         { title: "Publish launch announcement", done: false },
       ],
     },

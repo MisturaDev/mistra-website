@@ -13,8 +13,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <DownloadSection />
-      <CTASection />
       <FAQ />
+      <CTASection />
       <Footer />
     </main>
   );
