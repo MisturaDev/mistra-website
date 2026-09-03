@@ -7,20 +7,17 @@ import {
   Flame,
   FileText,
   Calendar as CalendarIcon,
-  Zap,
   Check,
   Wifi,
   Battery,
   ListTodo,
   Home,
-  Sun,
-  Moon,
   Plus,
   ShieldCheck,
 } from "lucide-react";
 
 export default function PhoneMockup() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const isDark = false;
   const [activeTab, setActiveTab] = useState<"today" | "tasks" | "habits" | "notes" | "calendar">("today");
 
   const [tasks, setTasks] = useState([
@@ -150,76 +147,9 @@ export default function PhoneMockup() {
   const progressPercent = Math.round((completedCount / tasks.length) * 100);
 
   const dayLabels = ["M", "T", "W", "T", "F", "S", "S"];
-  const isDark = theme === "dark";
 
   return (
     <div className="relative mx-auto w-full max-w-[340px] sm:max-w-[370px] select-none">
-      <motion.div
-        initial={{ y: 0 }}
-        animate={{ y: [-4, 4, -4] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        className={`absolute -top-5 -left-6 sm:-left-10 z-20 hidden sm:flex items-center gap-2.5 px-3.5 py-2 rounded-2xl border shadow-lg text-xs ${
-          isDark
-            ? "bg-slate-900 border-slate-700/80 text-white shadow-purple-950/30"
-            : "bg-white border-slate-200/80 text-slate-800"
-        }`}
-      >
-        <div className="p-1.5 rounded-lg bg-purple-500/15 text-[#7C3AED]">
-          <Zap className="w-3.5 h-3.5" />
-        </div>
-        <div>
-          <p className="font-semibold leading-tight">0ms Offline SQLite</p>
-          <p className={`text-[10px] ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-            Instant local execution
-          </p>
-        </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ y: 0 }}
-        animate={{ y: [4, -4, 4] }}
-        transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-        className={`absolute -bottom-4 -right-4 sm:-right-8 z-20 hidden sm:flex items-center gap-2.5 px-3.5 py-2 rounded-2xl border shadow-lg text-xs ${
-          isDark
-            ? "bg-slate-900 border-emerald-800/80 text-white shadow-emerald-950/30"
-            : "bg-white border-emerald-200 text-slate-800"
-        }`}
-      >
-        <div className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-500">
-          <Flame className="w-3.5 h-3.5" />
-        </div>
-        <div>
-          <p className="font-semibold text-emerald-500 leading-tight">18-Day Habit Streak</p>
-          <p className={`text-[10px] ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-            Streak Shield Protected 🛡️
-          </p>
-        </div>
-      </motion.div>
-
-      <div className="flex items-center justify-between mb-2.5 px-2">
-        <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse" />
-          <span>Interactive Live Simulator</span>
-        </div>
-        <button
-          onClick={() => setTheme(isDark ? "light" : "dark")}
-          className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:scale-105 transition-all cursor-pointer shadow-xs"
-          title="Toggle phone theme"
-        >
-          {isDark ? (
-            <>
-              <Sun className="w-3.5 h-3.5 text-amber-400" />
-              <span>Light Mode</span>
-            </>
-          ) : (
-            <>
-              <Moon className="w-3.5 h-3.5 text-purple-600" />
-              <span>OLED Dark</span>
-            </>
-          )}
-        </button>
-      </div>
-
       <div className="relative rounded-[44px] bg-slate-950 p-2.5 shadow-2xl border-4 border-slate-800 shadow-slate-400/20 dark:shadow-purple-950/30 overflow-hidden">
         <div
           className={`relative rounded-[36px] overflow-hidden flex flex-col h-[670px] border transition-colors duration-300 ${
@@ -278,11 +208,77 @@ export default function PhoneMockup() {
                             isDark ? "text-white" : "text-slate-900"
                           }`}
                         >
-                          Good morning, Alex
+                          Good morning, Mistura
                         </h3>
                       </div>
-                      <div className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-400/40 flex items-center justify-center text-xs font-bold text-[#7C3AED]">
-                        A
+                      <div className="relative w-8 h-8 rounded-full ring-2 ring-purple-500/40 overflow-hidden shadow-xs bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 flex items-center justify-center shrink-0">
+                        <svg viewBox="0 0 36 36" fill="none" className="w-full h-full">
+                          {/* Background Glow */}
+                          <rect width="36" height="36" fill="url(#girlAvatarBg)" />
+                          {/* Back Hair */}
+                          <path
+                            d="M9 16C9 10.5 13 6 18 6C23 6 27 10.5 27 16C27 22 26 26 26 28C24 29 21 29 18 29C15 29 12 29 10 28C10 26 9 22 9 16Z"
+                            fill="#311006"
+                          />
+                          {/* Shoulders / Top */}
+                          <path
+                            d="M8 36C8 30 12.5 26 18 26C23.5 26 28 30 28 36"
+                            fill="#8B5CF6"
+                          />
+                          {/* Neck */}
+                          <rect x="16" y="21" width="4" height="6" rx="2" fill="#FBBF24" />
+                          {/* Face */}
+                          <ellipse cx="18" cy="16.5" rx="5.5" ry="6" fill="#FDE68A" />
+                          {/* Front Hair Bangs & Waves */}
+                          <path
+                            d="M12.5 14C12 11 14 7.5 18 7.5C22 7.5 24 11 23.5 14C22.5 13 21 12 18 12.5C15 13 13.5 13 12.5 14Z"
+                            fill="#451A03"
+                          />
+                          {/* Hair Strands Left & Right */}
+                          <path
+                            d="M12.5 13C12.5 17 13.5 21 14.5 23C13.8 23 12 20 11.5 16C11.2 13.5 12 12.5 12.5 13Z"
+                            fill="#451A03"
+                          />
+                          <path
+                            d="M23.5 13C23.5 17 22.5 21 21.5 23C22.2 23 24 20 24.5 16C24.8 13.5 24 12.5 23.5 13Z"
+                            fill="#451A03"
+                          />
+                          {/* Eyes */}
+                          <ellipse cx="15.8" cy="16.5" rx="0.75" ry="0.9" fill="#1E293B" />
+                          <ellipse cx="20.2" cy="16.5" rx="0.75" ry="0.9" fill="#1E293B" />
+                          {/* Eye sparkle */}
+                          <circle cx="15.6" cy="16.2" r="0.25" fill="#FFFFFF" />
+                          <circle cx="20.0" cy="16.2" r="0.25" fill="#FFFFFF" />
+                          {/* Cheeks */}
+                          <circle cx="14.5" cy="18" r="1" fill="#F87171" opacity="0.6" />
+                          <circle cx="21.5" cy="18" r="1" fill="#F87171" opacity="0.6" />
+                          {/* Smile */}
+                          <path
+                            d="M16.5 19.2C17 20 19 20 19.5 19.2"
+                            stroke="#B45309"
+                            strokeWidth="0.7"
+                            strokeLinecap="round"
+                          />
+                          {/* Small gold earrings */}
+                          <circle cx="12.2" cy="17.5" r="0.5" fill="#F59E0B" />
+                          <circle cx="23.8" cy="17.5" r="0.5" fill="#F59E0B" />
+                          {/* Hair Clip / Flower Accent */}
+                          <circle cx="22.5" cy="10" r="1.2" fill="#EC4899" />
+                          <circle cx="22.5" cy="10" r="0.5" fill="#FDE047" />
+                          <defs>
+                            <linearGradient
+                              id="girlAvatarBg"
+                              x1="0"
+                              y1="0"
+                              x2="36"
+                              y2="36"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#FCE7F3" />
+                              <stop offset="1" stopColor="#E0E7FF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
 

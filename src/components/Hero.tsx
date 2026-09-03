@@ -12,25 +12,10 @@ import PhoneMockup from "./PhoneMockup";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-purple-50/40 via-white to-white">
+    <section className="relative pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden bg-gradient-to-b from-purple-50/40 via-white to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-7 z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-50 border border-purple-200/70 text-xs font-semibold text-[#7C3AED] shadow-xs"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span>Version 1.0 Live</span>
-              <span className="text-purple-300">•</span>
-              <span className="text-purple-700/80 font-normal">Offline-First Personal OS</span>
-            </motion.div>
-
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-5 z-10">
             <motion.h1
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,27 +49,27 @@ export default function Hero() {
             >
               <a
                 href="#download"
-                className="px-6 py-3.5 rounded-xl font-semibold text-white bg-[#7C3AED] hover:bg-[#6D28D9] flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all group cursor-pointer"
+                className="px-6 py-3.5 rounded-xl font-semibold text-white bg-slate-950 hover:bg-slate-900 border border-slate-800 flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all group cursor-pointer"
               >
-                <Smartphone className="w-5 h-5 text-purple-200" />
+                <Apple className="w-5 h-5 text-white" />
                 <div className="text-left">
-                  <div className="text-sm font-bold">Download for Android</div>
-                  <div className="text-[11px] text-purple-200 font-normal">
-                    Direct APK & Google Play · Free
+                  <div className="text-[10px] text-slate-400 font-medium uppercase tracking-wider leading-none">
+                    Download on the
                   </div>
+                  <div className="text-sm font-bold text-white mt-0.5">App Store</div>
                 </div>
               </a>
 
               <a
                 href="#download"
-                className="px-6 py-3.5 rounded-xl font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-200/90 shadow-xs hover:shadow-sm flex items-center justify-center gap-3 group cursor-pointer transition-all"
+                className="px-6 py-3.5 rounded-xl font-semibold text-white bg-[#7C3AED] hover:bg-[#6D28D9] flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all group cursor-pointer"
               >
-                <Apple className="w-5 h-5 text-slate-700" />
+                <Smartphone className="w-5 h-5 text-purple-200" />
                 <div className="text-left">
-                  <div className="text-sm font-bold">Download for iOS</div>
-                  <div className="text-[11px] text-slate-500 font-normal">
-                    Apple TestFlight Beta · Free
+                  <div className="text-[10px] text-purple-200 font-medium uppercase tracking-wider leading-none">
+                    Get it on
                   </div>
+                  <div className="text-sm font-bold text-white mt-0.5">Google Play</div>
                 </div>
               </a>
             </motion.div>
