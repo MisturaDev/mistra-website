@@ -10,23 +10,19 @@ export default function FAQ() {
   const faqs = [
     {
       q: "How do I get started with Mistra on my phone?",
-      a: "Getting started takes less than a minute. Tap the 'Download for Android' button to download the latest mobile release, or join the iOS waitlist to receive an invitation for TestFlight. Once installed, you can start organizing your tasks, habits, and notes immediately without creating an account.",
+      a: "Getting started takes less than a minute. Download Mistra from the Apple App Store or Google Play Store. Once installed, you can start organizing your tasks, habits, and notes immediately without friction.",
     },
     {
-      q: "When will Mistra launch on the Apple iOS App Store & Google Play?",
-      a: "The Android release is available now, and the iOS TestFlight beta rollout is currently active for early waitlist members. Public general availability on both the Apple App Store and Google Play Store is slated for later this year.",
+      q: "Is Mistra really completely free?",
+      a: "Yes! Mistra is 100% free with no subscription paywalls, no trial traps, and zero ads. You get full access to all 5 core pillars (Tasks, Habits, Notes, Calendar, and Goals) with instant offline local SQLite storage.",
     },
     {
       q: "Is my personal data private and secure?",
-      a: "Yes. Mistra operates on a local-first architecture where all your tasks, notes, habits, and schedules are stored directly on your device in an encrypted local database. If you enable Pro cloud sync, all synchronization transmissions are encrypted.",
+      a: "Yes. Mistra operates on a local-first architecture where all your tasks, notes, habits, and schedules are stored directly on your device in an encrypted local database. Your thoughts and daily rituals are never tracked or mined for advertising.",
     },
     {
       q: "Can I use Mistra completely offline without an internet connection?",
-      a: "Yes! Offline-first speed is a foundational pillar of Mistra. You can create tasks, mark habits, take markdown notes, and manage your day anywhere with zero loading spinners. Data synchronizes automatically whenever you reconnect.",
-    },
-    {
-      q: "What is included in the Free Tier vs Mistra Pro?",
-      a: "Mistra Free provides full access to all 5 core pillars (Tasks, Habits, Notes, Calendar, and Goals) on your device forever with local storage. Mistra Pro ($3.25/mo on annual billing) unlocks multi-device real-time cloud sync, automated backups, and advanced consistency analytics.",
+      a: "Yes! Offline-first speed is a foundational pillar of Mistra. You can create tasks, mark habits, take markdown notes, and manage your day anywhere with zero loading spinners or network latency.",
     },
     {
       q: "Can I import and export my personal data?",

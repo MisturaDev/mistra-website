@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ArrowRight, Smartphone, Apple } from "lucide-react";
+import { Menu, X, ArrowRight, Smartphone } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,10 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "Why Mistra", href: "#why-mistra" },
-    { name: "Craftsmanship", href: "#craftsmanship" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Download", href: "#download" },
     { name: "FAQ", href: "#faq" },
   ];
 
@@ -45,16 +42,9 @@ export default function Navbar() {
               priority
             />
           </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-2">
-              <span className="heading-font text-xl font-bold tracking-tight text-slate-900 group-hover:text-purple-700 transition-colors">
-                Mistra
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200/60">
-                Personal OS
-              </span>
-            </div>
-          </div>
+          <span className="heading-font text-xl font-bold tracking-tight text-slate-900 group-hover:text-purple-700 transition-colors">
+            Mistra
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1 bg-slate-50/80 px-4 py-1.5 rounded-full border border-slate-200/60 shadow-xs">
@@ -70,14 +60,6 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a
-            href="#download"
-            className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all cursor-pointer border border-slate-200/80 flex items-center gap-1.5"
-          >
-            <Apple className="w-4 h-4 text-slate-700" />
-            <span>iOS Beta</span>
-          </a>
-
           <a
             href="#download"
             className="px-4 py-2 text-sm font-semibold text-white bg-[#7C3AED] hover:bg-[#6D28D9] rounded-xl flex items-center gap-2 shadow-sm hover:shadow-md transition-all cursor-pointer"
