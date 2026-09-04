@@ -37,20 +37,29 @@ The Mistra website is the landing page and waitlist funnel for the Mistra Person
 
 ### Installation
 
-Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/MisturaDev/mistra-website.git
-cd mistra-website
-Install dependencies:
 ```
+
+### Navigate into the project
+
+```bash
+cd mistra-website
+```
+
+### Install dependencies:
+```bash
 npm install
+```
 
-Start the development server:
-
+### Start the development server:
+```bash
 npm run dev
+```
 
-Open http://localhost:3000 in your browser.
+- Open http://localhost:3000 in your browser.
 
 
 ## Project Structure
@@ -93,9 +102,9 @@ Mistra-Website/
 
 ## Platforms
 
-Mistra is being developed for iOS and Android.
+- Mistra is being developed for iOS and Android.
 
-Download links on the website will connect to the respective app stores as the applications become available.
+- Download links on the website will connect to the respective app stores as the applications become available.
 
 
 ## Design
@@ -111,14 +120,15 @@ Mistra is built around a calm, modern, and focused visual experience with:
 
 ## Project Status
 
-In active development.
+**In active development.**
 
 The Mistra website and Personal Operating System are currently being developed.
 
-## Author
 
-Mistura Ishola
+## Developer
+
+Developed by **Mistura Ishola**.
 
 Built with care for people who want a simpler way to organize their lives.
 
-Mistra — Your life, organized.
+**Mistra — Your life, organized.**
